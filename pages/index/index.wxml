@@ -1,0 +1,45 @@
+<!--index.wxml-->
+  <!--表格区域-->
+  <form bindsubmit='formSubmit'>
+    <input class='tit' name='title' value='{{title}}' placeholder='统计标题' maxlength='30' placeholder-style='align: center;'></input>
+    <view class="tr bg-w">
+      <view class="th">
+        <input placeholder='横轴标题' value='{{XName}}' name="XName"></input>
+      </view>  
+      <view class="th-2">
+        <input name="YName" value='{{YName}}' placeholder='纵轴标题'></input>  
+      </view>
+      <view class="th-3">操作</view>  
+    </view>  
+    <block wx:for="{{listData}}" wx:key="{{name}}">  
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">  
+        <view class="td-1" selectable="true">
+          <input data-indexs="{{index}}" value='{{listData[index].name}}' placeholder='项目' bindblur='changeItem'></input>
+        </view>  
+        <view class="td-2" selectable="true" scroll-y="true" >  
+          <input  data-indexs="{{index}}" class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true" value='{{listData[index].data}}' placeholder='0' type='digit' bindblur='changeNum'></input>
+        </view>
+        <view class="td-3" data-indexs='{{index}}' bindtap='delData'>删除</view>   
+      </view>  
+      <view class="tr bg-g2" wx:else>  
+        <view class="td-1" selectable="true">
+          <input data-indexs="{{index}}" value='{{listData[index].name}}' placeholder='项目' bindblur='changeItem'></input>
+        </view>  
+        <view class="td-2" selectable="true"  scroll-y="true">  
+          <input data-indexs="{{index}}" class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true" value='{{listData[index].data}}' placeholder='0' type='digit' bindblur='changeNum'></input>
+        </view>
+        <view class="td-3" data-indexs='{{index}}' bindtap='delData'>删除</view>   
+      </view>  
+    </block>
+
+    <view class='btn-area'>
+      <view class='btns'>
+        <button class='btn black' bindtap='addLine'>添加一行</button>
+        <button class='btn black' bindtap='removeLine'>减少一行</button>
+      </view>
+      <view class='btns'>
+        <button class='btn sum white' formType='submit'>统计数据</button>
+        <button class='btn res white' bindtap='formReset'>重置数据</button>
+      </view>      
+    </view>  
+  </form>

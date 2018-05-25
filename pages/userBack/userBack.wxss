@@ -1,0 +1,30 @@
+form{
+  display: flex;
+  flex-direction: column;
+}
+.radios{
+  margin-top: 15rpx;
+}
+
+.radioleft{
+  margin-right: 100rpx;
+  margin-left: 5%;
+}
+
+textarea{
+  border: 1px solid #aaa;
+  margin: 30rpx 5%;
+  width: 90%;
+}
+
+input{
+  font-size: larger;
+  border: 1px solid #aaa;
+  margin: 30rpx 5%;
+  height:2.5rem;
+}
+
+.sum{
+  margin-top: 100rpx;
+  background-color: #66FF66;
+}

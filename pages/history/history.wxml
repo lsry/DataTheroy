@@ -1,0 +1,28 @@
+<view class="title">历史统计数据</view>
+
+<view class="tr bg-w">
+  <view class="th1">索引</view>  
+  <view class="th2">标题</view>
+  <view class="th3">日期</view>
+  <view class="th4">操作</view>  
+</view>  
+<block wx:for="{{list}}" wx:key="{{item.id}}">  
+  <view class="tr bg-g" wx:if="{{index % 2 == 0}}">  
+    <view class="td-1">{{index+1}}</view>  
+    <view class="td-2">{{item.title}}</view>   
+    <view class="td-3">{{item.year}}/{{item.month}}/{{item.day}}</view>  
+    <view class="td-4">  
+      <view data-id='{{index}}' bindtap='lookData'>查看</view>
+      <view data-id='{{index}}' bindtap='delData'>删除</view>
+    </view>  
+  </view>  
+  <view class="tr bg-g2" wx:else>  
+    <view class="td-1">{{index+1}}</view>  
+    <view class="td-2">{{item.title}}</view>   
+    <view class="td-3">{{item.year}}/{{item.month}}/{{item.day}}</view>   
+    <view class="td-4">  
+      <view data-id='{{index}}' bindtap='lookData'>查看</view>
+      <view data-id='{{index}}' bindtap='delData'>删除</view>
+    </view>  
+  </view>
+</block>

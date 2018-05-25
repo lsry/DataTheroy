@@ -1,0 +1,66 @@
+<view class='hea'>
+  <view class='c1'>
+    <view class='titf'>最大值</view>
+    <view class='numf'>{{maxnum}}</view>
+    <view class='titf'>名称</view>
+    <view class='numf'>{{maxname}}</view>
+  </view>
+  <view class='c1 cenx'>
+    <view class='titf'>总和</view>
+    <view class='numf'>{{datasum}}</view>
+    <view class='titf'>平均值</view>
+    <view class='numf'>{{avgnum}}</view>
+  </view>
+  <view class='c1'>
+    <view class='titf'>最小值</view>
+    <view class='numf'>{{minnum}}</view>
+    <view class='titf'>名称</view>
+    <view class='numf'>{{minname}}</view>
+  </view>
+</view>
+
+<view class='c2'>
+  <view class='c2block'>
+    <view class='c2ltop' bindtap='changeTitle' data-cur='curname'>{{curname}}</view>
+    <view class='c2ldown'>{{toyear}}年{{tomonth}}月{{today}}日</view>
+  </view>
+  <view class='c2block'>
+    <button class='c2btn' bindtap='changeColumn'>{{curButname}}</button>
+  </view>
+</view>
+
+<view class='c3'>
+    <canvas canvas-id="lineCanvas" data-curpie="cur" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+
+    <view class='btn-area horpos'>
+      <button class='btn' bindtap='changeTitle' data-cur='Yname'>更改纵轴标题</button>
+      <view class='blank'></view>
+      <button class='btn' bindtap='changeTitle' data-cur='Xname'>更改横轴标题</button>
+    </view>
+</view>
+
+<view class='c2'>
+  <view class='c2block'>
+    <view class='c2ltop' bindtap='changeTitle' data-cur='Pipname'>{{pipname}}</view>
+    <view class='c2ldown'>{{toyear}}年{{tomonth}}月{{today}}日</view>
+  </view>
+  <view class='c2block'>
+    <button class='c2btn' bindtap='changeRing'>{{pipButname}}</button>
+  </view>
+</view>
+
+<view class="c3">
+  <canvas canvas-id="pieCanvas" data-curpie="pie" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
+</view>
+
+<view class="c3 horpos">
+  <button class='btn btnbot' bindtap='saveData'>保存数据</button>
+  <view class='blank'></view>
+  <button class='btn btnbot' bindtap='backPage'>返回上页</button>
+</view>
+
+
+
+<modal confirm-text="确定" cancel-text="取消" title="更改标题" hidden="{{modalhidden}}" bindconfirm="modalConfirm" bindcancel="modalCancel">
+  <input name="tit" class='secin' placeholder='标题' bindblur='InTitle'></input>
+</modal>

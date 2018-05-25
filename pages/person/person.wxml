@@ -1,0 +1,14 @@
+<view class="userinfo">
+  <open-data type="userAvatarUrl" class="useimage"></open-data>
+  <open-data class="userinfo-nickname" type="userNickName"></open-data>
+</view>
+
+<view class="tr pos" bindtap='getHistory'>
+  <view>历史统计数据</view>
+  <view>></view>
+</view>
+
+<view class="tr" bindtap='userBack'>
+  <view>用户反馈</view>
+  <view>></view>
+</view>

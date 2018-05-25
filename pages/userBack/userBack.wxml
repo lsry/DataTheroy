@@ -1,0 +1,12 @@
+<form bindsubmit='formSubmit'>
+  <radio-group name="choice" class="radios">
+    <label class='radioleft'><radio value='question' checked></radio>遇到问题</label>
+    <label><radio value='suggestion'></radio>新功能建议</label>
+  </radio-group>
+
+  <textarea name="content" placeholder='请详细描述您遇到的问题'></textarea>
+
+  <input name="contact" placeholder='手机号/邮箱'></input>
+
+  <button class='sum' form-type='submit'>提交</button>
+</form>

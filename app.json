@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/statics/statics",
+    "pages/person/person",
+    "pages/history/history",
+    "pages/userBack/userBack"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#66FF66",
+    "navigationBarTitleText": "数据统计",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "#707070",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/首页.png",
+        "selectedIconPath": "img/首页1.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "img/个人.png",
+        "selectedIconPath": "img/个人1.png"
+      }
+    ]
+  }
+}

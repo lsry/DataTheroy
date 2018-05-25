@@ -1,0 +1,80 @@
+/* pages/history/history.wxss */
+.title{
+  margin-left: 35%;
+  margin-top: 50rpx;
+  margin-bottom: 15rpx;
+  font-size: large;
+}
+
+.tr{
+  display: flex;  
+  flex-direction: row;
+  width:100%;
+  justify-content: center;  
+  height: 2rem;  
+  align-items: center;  
+}
+
+.bg-w{  
+  background: #afb4db;
+  text-align: center;
+}  
+
+.th1{
+  width:10%; 
+}
+
+.th2{
+  width:40%;
+}
+
+.th3{
+  width:25%;
+}
+
+.th4{
+  width:25%; 
+}
+
+.td-1{
+  width:10%;  
+  text-align: center;  
+  border-right: 2px solid #ddd;  
+  height: 100%;  
+}
+
+.td-2 {  
+    width:40%;  
+    justify-content: center;  
+    border-right: 2px solid #ddd;  
+    text-align: left;  
+    height: 100%;  
+    max-width: 100%;  
+}
+
+.td-3 {  
+    width:25%;  
+    justify-content: center;  
+    border-right: 2px solid #ddd;  
+    text-align: left;  
+    height: 100%;  
+    max-width: 100%;  
+}
+
+.td-4 {  
+    width:25%;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    text-align: left;  
+    height: 100%;  
+    max-width: 100%;  
+    padding: 40rpx 0;  
+}
+
+.bg-g{  
+  background: #E6F3F9;  
+}  
+.bg-g2{  
+  background: rgb(248, 248, 248);  
+}  

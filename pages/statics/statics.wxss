@@ -1,0 +1,119 @@
+/* pages/statics/statics.wxss */
+page{
+  background-color: rgb(244, 244, 244);
+}
+
+.hea{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 300rpx;
+}
+
+.cenx{
+  margin: 0 3rpx;
+}
+
+.c1{
+  width:33%;
+  background-color: rgb(254, 254, 254);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.titf{
+  color:rgb(136,136,136);
+  font-size:small;
+  margin-bottom: 15rpx;
+  margin-top: 10rpx;
+}
+
+.numf{
+  color:rgb(243, 63, 84);
+  font-size: 50rpx;
+}
+
+.c2{
+  background-color: rgb(254, 254, 254);
+  height:130rpx;
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.c2block{
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.c2ltop{
+  color: rgb(53, 53, 53)
+}
+
+.c2ldown{
+  color:rgb(136,136,136);
+  font-size: small;
+  margin-top: 5rpx;
+}
+
+.c2btn{
+  font-size: x-small;
+  color:rgb(136,136,136);
+  background-color: rgb(254, 254, 254);
+}
+
+.secin{
+  height:30rpx;
+  margin:10rpx 30rpx;
+  color:black;
+}
+
+modal{
+  position:absolute;
+  z-index:9999;
+}
+
+.c3{
+  background-color: rgb(254, 254, 254);
+  margin-top: 10rpx;
+}
+
+.btn-area{
+  height: 80rpx;
+  width:100%;
+}
+
+.btn{
+  font-size: small;
+  color:rgb(136,136,136);
+  background-color: rgb(254, 254, 254);
+  margin: 0;
+  height: 68rpx;
+}
+
+.blank{
+  width:80rpx;
+  height: 68rpx;
+}
+
+.canvas{
+  width:100%;
+  height:450rpx;
+}
+
+.horpos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btnbot{
+  height: 93rpx;
+  font-size:large;
+}
