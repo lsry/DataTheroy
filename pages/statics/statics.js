@@ -41,6 +41,7 @@ Page({
     isPip:true,
     pipButname: "更换环形图表",
     pieRingData:[],
+    pipPath:"",
     modalhidden:true,
     whichBut:"",
     modalInput:""
